@@ -2,8 +2,9 @@ export const dataRecipe = [
     {
         title: "Cheese cake au thé matcha",
         image: "https://cdn.shopify.com/s/files/1/1921/3233/articles/SUNCORE_FOODS_OMBRE_MATCHA_CHEESECAKE_800X800_52b9fb77-006e-4ca7-b20f-47c9e7130ef9.jpg?v=1629344091",
-        time: "10h",
-        lvl: "medium",
+        time: "1h",
+        difficulty: "medium",
+        portion: 2,
         tags: ["dessert"],
         ingredients: [
             {
@@ -58,8 +59,9 @@ export const dataRecipe = [
         title: "Ichigo daifuku",
         image: "https://uploads-ssl.webflow.com/637792243a20ba56f02de2c2/63cfe5d1c0ca483c66a9a480_ichigo_daifuku_recette.webp",
         time: "20min",
-        lvl: "easy",
-        tags: [""],
+        difficulty: "easy",
+        portion: 5,
+        tags: ["Pâtisserie"],
         ingredients: [
             {
                 name: 'Shiratamako (farine de riz gluant)',

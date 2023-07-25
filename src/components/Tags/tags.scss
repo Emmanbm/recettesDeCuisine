@@ -1,0 +1,23 @@
+#tagsList{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-size: 13px;
+}
+.tag{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    >button{
+        padding:none;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+        color: red;
+    }
+}

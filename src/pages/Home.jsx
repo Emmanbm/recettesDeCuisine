@@ -1,11 +1,17 @@
 import React from 'react';
-import RecettesProvider from '../context/recettesContext';
+import { useRecettesContext } from '../context/RecettesContext'
+import Recette from '../components/Recette/Recette';
 
 const Home = () => {
+    const { recettesList } = useRecettesContext()
     return (
-        <RecettesProvider>
-            <h1>home</h1>
-        </RecettesProvider>
+        <div>
+            {
+                recettesList.map((recette, i) => (
+                    <Recette key={i} />
+                ))
+            }
+        </div>
     )
 }
 

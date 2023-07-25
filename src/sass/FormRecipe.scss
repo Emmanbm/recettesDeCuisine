@@ -7,6 +7,9 @@ input,textarea,select,button{
     color: grey; 
     width: 200px;
 }
+textarea {
+    height: 150px;
+}
 select{
     width: 20%;
 }
@@ -26,6 +29,9 @@ button{
 
 form > div{
     margin-bottom: 15px;
+}
+form > div > button{
+    margin-left: 20px;
 }
 .ingredient{
     display: flex;
