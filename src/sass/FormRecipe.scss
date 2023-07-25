@@ -6,9 +6,11 @@
 }
 input,textarea,select,button{
     border-radius: 10px;
+    border:1px solid rgb(54, 11, 11);
     padding: 2px;
-    color: grey; 
+    color: rgb(54, 54, 54); 
     width: 200px;
+    background-color: #c7b49b;
 }
 textarea {
     height: 150px;
@@ -18,8 +20,8 @@ select{
 }
 button{
     width: 15%;
-    color: rgb(81, 81, 81);
-    box-shadow: inset 0px 0px 5px rgb(82, 82, 82);
+    color: rgb(54, 54, 54);
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.438);
     border: none;
     font-size: 12px;
     padding: 5px;

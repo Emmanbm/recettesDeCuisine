@@ -130,6 +130,7 @@ const FormRecipe = () => {
                         id='difficulty'
                         onChange={(e) => {
                             setSelectLvl(e.target.value);
+                            console.log(e);
                         }}
                         value={selectLvl}
                     >
