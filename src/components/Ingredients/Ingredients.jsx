@@ -1,5 +1,5 @@
 import Ingredient from './Ingredient';
-import './Ingredients.scss';
+import '../../sass/Ingredients.scss';
 
 const Ingredients = ({ ingredients, setIngredients }) => {
     return (

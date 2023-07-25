@@ -36,9 +36,21 @@ const FormRecipe = () => {
                 difficulty: selectLvl,
                 tags,
                 ingredients,
-                recipe: inputRecipeText
+                recipe: inputRecipeText.split('\n')
             }
-        ])
+        ]);
+        setInputIngredient('');
+        setInputPortionRecipe('');
+        setInputQuantity('');
+        setInputRecipeText('');
+        setInputTagRecipe('');
+        setInputTimeRecipe('');
+        setInputTitleRecipe('');
+        setInputUrlImage('');
+        setSelectUnit('');
+        setSelectLvl('');
+        setIngredients([]);
+        setTags([]);
     }
 
     const addIngredient = () => {
@@ -131,6 +143,7 @@ const FormRecipe = () => {
                     <input
                         type="number"
                         placeholder='Portion...'
+                        min= {1}
                         onChange={(e) => {
                             setInputPortionRecipe(e.target.value)
                         }}
@@ -164,6 +177,7 @@ const FormRecipe = () => {
                     <input
                         type="number"
                         placeholder='Quantité...'
+                        min={1}
                         onChange={(e) => {
                             setInputQuantity(e.target.value)
                         }}

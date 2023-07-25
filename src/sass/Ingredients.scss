@@ -20,7 +20,7 @@
     box-shadow: none;
 }
 .ingredientList {
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
@@ -29,7 +29,7 @@
     position: relative;
     button{
         position: absolute;
-        right: 70px;
+        right: 100px;
     }
     div{
         text-align: center;

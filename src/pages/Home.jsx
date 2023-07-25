@@ -1,14 +1,18 @@
 import React from 'react';
 import { useRecettesContext } from '../context/RecettesContext'
 import Recette from '../components/Recette/Recette';
+import '../sass/Recette.scss';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const { recettesList } = useRecettesContext()
     return (
-        <div>
+        <div className="recettes">
             {
                 recettesList.map((recette, i) => (
-                    <Recette key={i} />
+                    <Link to={`/recette/${i}`} key={i}>
+                        <Recette recette={recette} />
+                    </Link>
                 ))
             }
         </div>

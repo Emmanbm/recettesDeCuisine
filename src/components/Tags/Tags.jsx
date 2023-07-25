@@ -1,6 +1,6 @@
 import React from 'react';
 import Tag from './Tag';
-import './tags.scss'
+import '../../sass/Tags.scss';
 
 const Tags = ({ tags, setTags }) => {
     return (
