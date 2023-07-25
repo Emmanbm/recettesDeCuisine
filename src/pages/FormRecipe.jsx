@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../sass/formRecipe.scss'
+import '../sass/formRecipe.scss'
 const FormRecipe = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
