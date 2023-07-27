@@ -1,6 +1,6 @@
 import './App.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navbar from './pages/layouts/Navbar';
+import Navbar from './components/layouts/Navbar';
 import Home from './pages/Home';
 import FormRecipe from './pages/FormRecipe';
 import Recipe from './pages/Recipe';

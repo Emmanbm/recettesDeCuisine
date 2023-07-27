@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
-import SearchRecipe from '../../components/SearchRecipe/SearchRecipe';
-import Filter from '../../components/Filter/Filter';
+import SearchRecipe from '../SearchRecipe/SearchRecipe';
+import Filter from '../Filter/Filter';
 
 const Navbar = () => {
   const location = useLocation()

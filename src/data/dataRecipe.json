@@ -117,6 +117,82 @@
                 "Ajouter la crème fraîche et le jus de citron, la farine et le matcha.",
                 "Bien mélanger."
             ]
+        },
+        {
+            "title": "Sushi californien (maki inversé)",
+            "image": "https://assets.afcdn.com/recipe/20131025/16373_w150h150c1cx2138cy1425.webp",
+            "time": "35 min",
+            "difficulty": "medium",
+            "portion": 4,
+            "tag": ["Japonais", "Asiatique", "Sushi"],
+            "ingredients": [
+                {
+                    "name": "Sésame",
+                    "amount": 200,
+                    "unit": "g"
+                },
+                {
+                    "name": "Sucre en poudre",
+                    "amount": 1,
+                    "unit": "càs"
+                },
+                {
+                    "name": "Vinaigre de riz",
+                    "amount": 1,
+                    "unit": "càs"
+                },
+                {
+                    "name": "Sel",
+                    "amount": 0.5,
+                    "unit": "càs"
+                },
+                {
+                    "name": "Avocat",
+                    "amount": 0.5,
+                    "unit": ""
+                },
+                {
+                    "name": "Concombre",
+                    "amount": 0.25,
+                    "unit": ""
+                },
+                {
+                    "name": "Feuilles de nori (algues) coupées en 2",
+                    "amount": 2,
+                    "unit": ""
+                },
+                {
+                    "name": "Saumon cru ou fumé",
+                    "amount": 150,
+                    "unit": "g"
+                },
+                {
+                    "name": "Riz rond",
+                    "amount": 125,
+                    "unit": "g"
+                },
+                {
+                    "name": "Sauce soja",
+                    "amount": 10,
+                    "unit": "cl"
+                },
+                {
+                    "name": "Wasabi",
+                    "amount": 15,
+                    "unit": "g"
+                }
+            ],
+            "recipe":[
+                "Rincer le riz à l'eau froide jusqu'à ce que l'eau qui s'écoule soit claire. Laisser égoutter.",
+                "Faire cuire le riz dans 15 cl d'eau : porter à ébullition 2 minutes et laisser gonfler 10 minutes à petit feu couvert. Laisser refroidir.",
+                "Faire bouillir le vinaigre de riz avec le sucre et le sel. Laisser refroidir. Incorporer l'assaisonnement au riz.",
+                "Emincer en fines et longues lamelles le concombre et l'avocat.",
+                "Etaler 1 cm de riz sur chacune des feuilles de nori.",
+                "Saupoudrer de graines de sésame.",
+                "Retourner la feuille de nori (pour que le riz se retrouve à l'extérieur du rouleau) et étaler un peu wasabi.",
+                "Garnir avec le concombre, l'avocat et le saucrabemon, puis rouler pour former le rouleau (plus facile si vous possédez un makisu : natte de bambou à rouler).",
+                "Couper chaque rouleau en 8."
+            ]
         }
     ]
 }
