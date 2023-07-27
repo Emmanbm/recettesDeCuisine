@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import '../sass/FormRecipe.scss'
 import { useRecettesContext } from '../context/RecettesContext';
 import Ingredients from '../components/Ingredients/Ingredients';
 import Tags from '../components/Tags/Tags';
+import { redirect } from 'react-router-dom';
 const FormRecipe = () => {
     //contexts
-    const { recettesList, setRecettesList } = useRecettesContext();
+    const { recipesList, setRecipesList, tagsButton, setTagsButton } = useRecettesContext();
+
     //ingredients
     const [ingredients, setIngredients] = useState([]);
     //tags
@@ -26,12 +28,12 @@ const FormRecipe = () => {
     // fonction pour soumission du formulaire
     const handleSubmit = (e) => {
         e.preventDefault();
-        setRecettesList([
-            ...recettesList,
+        setRecipesList([
+            ...recipesList,
             {
                 title: inputTitleRecipe,
                 image: inputUrlImage,
-                time: inputTimeRecipe,
+                time: inputTimeRecipe + ' min',
                 portion: inputPortionRecipe,
                 difficulty: selectLvl,
                 tags,
@@ -39,6 +41,7 @@ const FormRecipe = () => {
                 recipe: inputRecipeText.split('\n')
             }
         ]);
+        setTagsButton([...tagsButton, ...tags.map(tag => tag.name)]);
         setInputIngredient('');
         setInputPortionRecipe('');
         setInputQuantity('');
@@ -67,7 +70,7 @@ const FormRecipe = () => {
         setInputQuantity('')
         setSelectUnit('')
     }
-    const addTag = () => {
+    const addTag = (e) => {
         setTags([
             ...tags,
             {
@@ -77,10 +80,20 @@ const FormRecipe = () => {
         ]);
         setInputTagRecipe('');
     }
+    const addExistingTag = (e) => {
+        setTags([
+            ...tags,
+            {
+                name: e.target.childNodes[0].data,
+                id: Date.now()
+            }
+        ]);
+    }
 
     return (
+
         <div id='formRecipe'>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} action={`/recette/${recipesList.length - 1}`}>
                 <div>
                     <input
                         type="text"
@@ -115,8 +128,8 @@ const FormRecipe = () => {
                 </div>
                 <div>
                     <input
-                        type="text"
-                        placeholder='Durée de la recette...'
+                        type="number"
+                        placeholder='Durée de la recette(en minutes)...'
                         required
                         onChange={(e) => {
                             setInputTimeRecipe(e.target.value)
@@ -144,7 +157,7 @@ const FormRecipe = () => {
                     <input
                         type="number"
                         placeholder='Portion...'
-                        min= {1}
+                        min={1}
                         onChange={(e) => {
                             setInputPortionRecipe(e.target.value)
                         }}
@@ -155,12 +168,26 @@ const FormRecipe = () => {
                     <input
                         type="text"
                         placeholder='Tags...'
+                        required={tags.length === 0}
                         onChange={(e) => {
                             setInputTagRecipe(e.target.value)
                         }}
                         value={inputTagsRecipe}
                     />
                     <button type='button' onClick={addTag}>Ajouter</button>
+                    <div className='tagsBase'>
+                        <p>Historique de tags:</p>
+                        <div className='displayTags'>
+                            {
+                                tagsButton.map((element, index) => (
+                                    <button className='tagInitial' type='button' onClick={addExistingTag} key={index}>
+                                        {element}
+                                    </button>
+                                ))
+                            }
+                        </div>
+
+                    </div>
                 </div>
                 {
                     tags.length > 0 &&
@@ -170,6 +197,7 @@ const FormRecipe = () => {
                     <input
                         type="text"
                         placeholder='Ingrédient...'
+                        required={ingredients.length === 0}
                         onChange={(e) => {
                             setInputIngredient(e.target.value)
                         }}

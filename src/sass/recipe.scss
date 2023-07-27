@@ -1,14 +1,15 @@
-.recettes{
+.recipes{
 	display: flex;
 	flex-wrap: wrap;
 	gap:30px;
 	margin-top: 20px;
 	justify-content: center;
-	position: relative;
+	
 	a{
 		text-decoration: none;
+		position: relative;
 	}
-	.recette{
+	.recipe{
 		background-size: cover;
 		filter: grayscale(100%);
 		width: 300px;
@@ -25,7 +26,7 @@
 }
 .displayRecipe{
 	display: grid;
-	grid-template-columns: 70% 1fr 1fr;
+	grid-template-columns: 60% 1fr 1fr;
 	gap: 10px;
 	text-align: center;
 	:first-child{
@@ -43,11 +44,11 @@
 }
 .textRecipe{
 	backdrop-filter: blur(10px);
+	position: absolute;
+	top:0;
 	width: 290px;
 	height: 50px;
 	padding-left: 10px;
-	position: absolute;
-	top: 0;
 	font-size: 10px;
 	color: black;
 	div{

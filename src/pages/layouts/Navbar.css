@@ -4,15 +4,41 @@ header {
     height: 50px;
     background: black;
     align-items: center;
+    position: relative;
 }
+
 header a {
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
-header:first-child{
+
+header a:first-child {
+    padding-right: 20px;
+}
+
+header:first-child {
     padding-left: 20px;
 }
+
 header a:hover {
     color: rgb(255, 225, 194);
+}
+
+.navbar-search {
+    filter: none;
+    position: absolute;
+    right: 30px;
+
+}
+
+.navbar-search form {
+    padding: 0;
+}
+.navigation{
+    display: flex;
+    gap: 10px;
+}
+.navigation  select{
+    width: 100px;
 }

@@ -1,17 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useRecettesContext } from '../context/RecettesContext'
-import Recette from '../components/Recette/Recette';
-import '../sass/Recette.scss';
+import '../sass/recipe.scss';
 import { Link } from 'react-router-dom';
+import RecipeHome from '../components/Recipe/RecipeHome';
 
 const Home = () => {
-    const { recettesList } = useRecettesContext()
+    const { displayedRecipes } = useRecettesContext();
     return (
-        <div className="recettes">
+        <div className="recipes">
             {
-                recettesList.map((recette, i) => (
-                    <Link to={`/recette/${i}`} key={i}>
-                        <Recette recette={recette} />
+                displayedRecipes.map((recipe, i) => (
+                    <Link to={`/recipe/${i}`} key={i}>
+                        <RecipeHome recipe={recipe} />
                     </Link>
                 ))
             }

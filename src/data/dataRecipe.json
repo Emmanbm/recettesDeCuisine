@@ -3,7 +3,7 @@
         {
             "title": "Cheese cake au thé matcha",
             "image": "https://cdn.shopify.com/s/files/1/1921/3233/articles/SUNCORE_FOODS_OMBRE_MATCHA_CHEESECAKE_800X800_52b9fb77-006e-4ca7-b20f-47c9e7130ef9.jpg?v=1629344091",
-            "time": "1h",
+            "time": "60 min",
             "difficulty": "medium",
             "portion": 2,
             "tags": [
@@ -12,32 +12,32 @@
             "ingredients": [
                 {
                     "name": "petits beurres",
-                    "amount": 200,
+                    "amount": 20,
                     "unit": "g"
                 },
                 {
                     "name": "beurre doux",
-                    "amount": 100,
+                    "amount": 10,
                     "unit": "g"
                 },
                 {
                     "name": "fromage à la crème (Philadelphia, par exemple)",
-                    "amount": 400,
+                    "amount": 40,
                     "unit": "g"
                 },
                 {
                     "name": "sucre",
-                    "amount": 100,
+                    "amount": 10,
                     "unit": "g"
                 },
                 {
                     "name": "oeufs",
-                    "amount": 4,
+                    "amount": 1,
                     "unit": ""
                 },
                 {
                     "name": "crème fraîche",
-                    "amount": 200,
+                    "amount": 20,
                     "unit": "ml"
                 },
                 {
@@ -47,7 +47,7 @@
                 },
                 {
                     "name": "farine",
-                    "amount": 60,
+                    "amount": 6,
                     "unit": "g"
                 },
                 {
@@ -69,7 +69,7 @@
         {
             "title": "Ichigo daifuku",
             "image": "https://uploads-ssl.webflow.com/637792243a20ba56f02de2c2/63cfe5d1c0ca483c66a9a480_ichigo_daifuku_recette.webp",
-            "time": "20min",
+            "time": "20 min",
             "difficulty": "easy",
             "portion": 5,
             "tags": [
@@ -78,32 +78,32 @@
             "ingredients": [
                 {
                     "name": "Shiratamako (farine de riz gluant)",
-                    "amount": 100,
+                    "amount": 10,
                     "unit": "g"
                 },
                 {
                     "name": "eau",
-                    "amount": 170,
+                    "amount": 17,
                     "unit": "ml"
                 },
                 {
                     "name": "sucre",
-                    "amount": 80,
+                    "amount": 8,
                     "unit": "g"
                 },
                 {
                     "name": "azuki cuit",
-                    "amount": 150,
+                    "amount": 15,
                     "unit": "g"
                 },
                 {
                     "name": "petites fraises",
-                    "amount": 10,
+                    "amount": 1,
                     "unit": ""
                 },
                 {
                     "name": "katakuriko (farine de fecule de pomme de terre)",
-                    "amount": 10,
+                    "amount": 1,
                     "unit": "g"
                 }
             ],
